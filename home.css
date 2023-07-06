@@ -72,7 +72,7 @@ text-decoration: underline;
 
 
 @media only screen and (max-width: 767px) {
-	#content {
+	#main {
 		width: 90%;
 		padding-top: 2em;
 	}
@@ -80,6 +80,6 @@ text-decoration: underline;
 		font-size: 1.25em;
 	}
 	h2 {
-		font-size: 1em;
+		font-size: 0.9em;
 	}
 }
