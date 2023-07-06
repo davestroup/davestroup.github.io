@@ -73,6 +73,7 @@ text-decoration: underline;
 
 @media only screen and (max-width: 767px) {
 	#main {
+		background-color: #000;
 		width: 90%;
 		padding-top: 2em;
 	}
