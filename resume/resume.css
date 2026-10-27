@@ -38,5 +38,14 @@ footer{font:13px/1.5 var(--sans);color:var(--muted);border-top:1px solid var(--l
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
 @media(max-width:700px){.page{padding:24px}.role{padding-left:0}.dates{position:static;width:auto;margin-bottom:8px}.role-head{display:flex;flex-direction:column-reverse;gap:6px}.org{font-size:27px}.campaign-entry{display:flex;flex-direction:column;gap:8px}.campaign-date{order:-1}.annotation{position:static;width:100%;margin:14px 0}.annotated{position:static}.contact{gap:8px}.topbar{font-size:12px}.print-button{padding:12px;font-size:14px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.role{padding-left:0;max-width:760px}
+.role-meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 20px;margin:8px 0 18px}
+.role-meta .job-title{margin:0}
+.role-meta .dates{position:static;width:auto;margin:0;white-space:nowrap;font-size:14px;letter-spacing:.01em}
+.campaign-entry{display:block;max-width:760px}
+.campaign-heading{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 20px;margin-bottom:8px}
+.campaign-heading .campaign-date{white-space:nowrap;padding:0;order:0}
+.role-head{display:block}
 @page{size:Letter;margin:.6in}
 @media print{body{background:#fff;color:#202124;font:10pt/1.4 var(--sans)}.page{max-width:none;padding:0}.topbar,.preview-banner,.annotation-hint,.annotation,footer,.skip{display:none!important}header{margin:0 0 16pt}h1{font-size:30pt;margin:0 0 7pt;letter-spacing:-.5pt}.identity{font:11pt/1.3 var(--sans);margin:0 0 6pt;max-width:none}.contact{font-size:9pt;gap:6pt}.contact a{text-decoration:none}.contact a[href^="https"]::after{content:" (linkedin.com/in/davestroup)"}.summary{font-size:10pt;line-height:1.4;max-width:none}section{margin-top:16pt}.section-title{font-size:10pt;padding-top:9pt;margin:0 0 12pt;break-after:avoid}.role{padding:0;margin-bottom:15pt}.role-head{display:flex;flex-direction:row;justify-content:space-between;gap:12pt;align-items:baseline}.org{font-size:13pt}.dates{position:static;width:auto;font-size:9pt;white-space:nowrap}.job-title{font-size:9pt;margin:3pt 0 7pt}.role-summary{margin:0 0 6pt}li{margin-bottom:5pt}.annotation-trigger{background:none;border:0;padding:0;cursor:auto}.client-list,.recognition{font-size:9pt}.campaign-entry{display:block;margin-bottom:10pt;break-inside:avoid}.campaign-role{font-size:10pt}.campaign-date{font-size:9pt;margin-top:3pt}.role-head,.job-title{break-after:avoid}.edu,.recognition-item{margin-bottom:8pt}.contact span[aria-hidden]{display:none}}
+@media print{.role-meta{margin:3pt 0 7pt;gap:3pt 12pt}.role-meta .job-title,.role-meta .dates{font-size:9pt;margin:0}.campaign-heading{gap:3pt 12pt;margin-bottom:4pt}.campaign-heading .campaign-date{font-size:9pt}}
