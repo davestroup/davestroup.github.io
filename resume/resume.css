@@ -1,0 +1,42 @@
+:root{--paper:#fcfbf8;--ink:#233b36;--muted:#596b64;--line:#cdd5cb;--highlight:#e1edce;--serif:"Crimson Pro",Georgia,serif;--sans:"Source Sans 3",Arial,sans-serif;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:19px/1.65 var(--serif)}
+a{color:inherit;text-underline-offset:4px}
+button{font:inherit;cursor:pointer;color:inherit}
+button:focus-visible,a:focus-visible{outline:3px solid #50764a;outline-offset:4px}
+.page{max-width:1080px;padding:28px 64px 40px;margin:auto}
+.preview-banner{text-align:center;background:#e7e9df;padding:9px 18px;font:13px/1.5 var(--sans);color:#45544b}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:18px;padding-bottom:24px;border-bottom:1px solid var(--line);font:13px/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase}
+.print-button{border:0;border-radius:5px;background:var(--ink);color:var(--paper);padding:12px 19px;font:15px/1.4 var(--sans);letter-spacing:0;text-transform:none}
+header{margin:52px 0 24px}
+h1{font:500 clamp(50px,7vw,78px)/1 var(--serif);letter-spacing:-2px;margin:0 0 22px}
+.identity{max-width:690px;font:400 clamp(22px,3vw,28px)/1.4 var(--serif);margin:0 0 22px}
+.contact{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;font:15px/1.5 var(--sans);color:var(--muted);margin:0}
+.annotation-hint{font:13px/1.5 var(--sans);color:var(--muted);margin:0 0 38px}
+section{margin-top:42px}
+.section-title{font:500 13px/1.5 var(--sans);letter-spacing:.13em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line);padding-top:22px;margin:0 0 26px;scroll-margin-top:20px}
+.summary{max-width:760px;margin:0;font-size:22px;line-height:1.55}
+.role{position:relative;padding-left:200px;margin-bottom:42px}
+.role-head{margin:0 0 6px}
+.org{font:500 29px/1.2 var(--serif);margin:0}
+.dates{position:absolute;top:5px;left:0;width:160px;font:14px/1.5 var(--sans);color:var(--muted)}
+.job-title{font:16px/1.45 var(--sans);color:var(--muted);margin:0 0 18px}
+.role-summary{margin:0 0 16px}
+ul{padding-left:20px;margin:0}
+li{padding-left:3px;margin:0 0 12px}
+li::marker{font-size:.7em;color:var(--muted)}
+.client-list{font:15px/1.6 var(--sans);color:var(--muted);margin-top:18px}
+.campaign-entry{display:grid;grid-template-columns:180px minmax(0,1fr);gap:5px 20px;margin:0 0 28px}
+.campaign-role{font:500 18px/1.4 var(--sans);grid-column:2}
+.campaign-date{grid-column:1;grid-row:1 / span 2;font:14px/1.5 var(--sans);color:var(--muted);padding-top:3px}
+.campaign-text{grid-column:2}
+.edu,.recognition-item{margin:0 0 22px}.recognition{font:15px/1.5 var(--sans);color:var(--muted)}
+[hidden]{display:none!important}
+footer{font:13px/1.5 var(--sans);color:var(--muted);border-top:1px solid var(--line);padding-top:20px;margin-top:42px}
+.skip{position:absolute;top:-80px;left:20px;background:#fff;padding:10px;z-index:10}.skip:focus{top:10px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(max-width:700px){.page{padding:24px}.role{padding-left:0}.dates{position:static;width:auto;margin-bottom:8px}.role-head{display:flex;flex-direction:column-reverse;gap:6px}.org{font-size:27px}.campaign-entry{display:flex;flex-direction:column;gap:8px}.campaign-date{order:-1}.annotation{position:static;width:100%;margin:14px 0}.annotated{position:static}.contact{gap:8px}.topbar{font-size:12px}.print-button{padding:12px;font-size:14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@page{size:Letter;margin:.6in}
+@media print{body{background:#fff;color:#202124;font:10pt/1.4 var(--sans)}.page{max-width:none;padding:0}.topbar,.preview-banner,.annotation-hint,.annotation,footer,.skip{display:none!important}header{margin:0 0 16pt}h1{font-size:30pt;margin:0 0 7pt;letter-spacing:-.5pt}.identity{font:11pt/1.3 var(--sans);margin:0 0 6pt;max-width:none}.contact{font-size:9pt;gap:6pt}.contact a{text-decoration:none}.contact a[href^="https"]::after{content:" (linkedin.com/in/davestroup)"}.summary{font-size:10pt;line-height:1.4;max-width:none}section{margin-top:16pt}.section-title{font-size:10pt;padding-top:9pt;margin:0 0 12pt;break-after:avoid}.role{padding:0;margin-bottom:15pt}.role-head{display:flex;flex-direction:row;justify-content:space-between;gap:12pt;align-items:baseline}.org{font-size:13pt}.dates{position:static;width:auto;font-size:9pt;white-space:nowrap}.job-title{font-size:9pt;margin:3pt 0 7pt}.role-summary{margin:0 0 6pt}li{margin-bottom:5pt}.annotation-trigger{background:none;border:0;padding:0;cursor:auto}.client-list,.recognition{font-size:9pt}.campaign-entry{display:block;margin-bottom:10pt;break-inside:avoid}.campaign-role{font-size:10pt}.campaign-date{font-size:9pt;margin-top:3pt}.role-head,.job-title{break-after:avoid}.edu,.recognition-item{margin-bottom:8pt}.contact span[aria-hidden]{display:none}}
