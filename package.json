@@ -1,0 +1,13 @@
+{
+  "name": "dave-stroup-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/journal.mjs build",
+    "preview": "node scripts/journal.mjs preview",
+    "new": "node scripts/journal.mjs new",
+    "test": "node --test scripts/journal.test.mjs"
+  },
+  "engines": {"node": ">=22"},
+  "dependencies": {"gray-matter": "^4.0.3", "markdown-it": "^14.1.0", "sharp": "^0.34.0"}
+}
